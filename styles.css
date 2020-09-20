@@ -1,0 +1,391 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  color: #0000008a;
+  background-color: #c0c1c3;
+}
+
+* {
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* typography */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+.font-md {
+  font-size: 0.875rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* positioning */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.clear-offset {
+  margin: 0 !important;
+}
+
+.clear-vertical-offset {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.offset-top-0 {
+  margin-top: 0 !important;
+}
+
+.offset-top-5 {
+  margin-top: 5px !important;
+}
+
+.offset-top-10 {
+  margin-top: 10px !important;
+}
+
+.offset-left-10 {
+  margin-left: 10px !important;
+}
+
+.offset-bottom-5 {
+  margin-bottom: 5px !important;
+}
+
+.offset-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.offset-right-10 {
+  margin-right: 10px !important;
+}
+
+.offset-left-25 {
+  margin-left: 25px !important;
+}
+
+.pull-top-10 {
+  padding-top: 10px !important;
+}
+
+.pull-bottom-10 {
+  padding-bottom: 10px !important;
+}
+
+/* grid system */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+/* cv */
+
+.cv {
+  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.75);
+}
+
+.cv-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.cv-divider {
+  border-bottom: 1px solid #3c3c3e;
+}
+
+/* sidebar */
+
+.cv-sidebar {
+  color: #fff;
+  background-color: #3b3b3d;
+  word-break: break-all;
+}
+
+.cv-sidebar .cv-icon {
+  font-size: 1.5rem;
+}
+
+.cv-sidebar .cv-divider {
+  border-color: #fff;
+}
+
+.cv-sidebar .cv-photo {
+  display: block;
+  margin: 50px auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+/* profile */
+
+.cv-profile {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  background-color: #fff;
+}
+
+/* header */
+
+.cv-profile-header {
+  margin-top: 50px;
+  min-height: 150px;
+}
+
+.cv-profile-username {
+  font-size: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3c3c3e;
+}
+
+.cv-profile-job-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #666668;
+}
+
+/* profile content */
+
+.cv-profile-content {
+  flex: auto;
+}
